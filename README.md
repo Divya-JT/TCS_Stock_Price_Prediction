@@ -43,8 +43,9 @@ Volatility
 
 These are extracted or engineered from stock price data.
 
+---
 
-🚀 Future Improvements
+##🚀 Future Improvements
 Add LSTM/GRU models for time series prediction
 
 Connect with a live API for real-time predictions
