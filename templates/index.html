@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TCS Stock Price Predictor</title>
+</head>
+<body>
+    <h2>TCS Stock Price Prediction</h2>
+    <form method="POST" action="/predict">
+        {% for field in ['Open', 'High', 'Low', 'Close', 'Volume', 'Returns', 'MA5', 'MA10', 'MA20', 'Volatility'] %}
+            <label>{{ field }}:</label><br>
+            <input type="text" name="{{ field }}" required><br><br>
+        {% endfor %}
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if prediction_text %}
+        <h3>{{ prediction_text }}</h3>
+    {% endif %}
+</body>
+</html>
+
+
+
